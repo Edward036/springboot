@@ -16,11 +16,9 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 
-
-
 /**
  * @author meisen
- *         2017-05-02
+ * 2017-05-05
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
@@ -44,6 +42,19 @@ public class UserTests {
         mvc.perform(request)
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo("[]")));
+
+        //2、post提交一个user
+        request = post("/users/")
+                .param("id", "123")
+                .param("name", "初学者")
+                .param("age", "25");
+        mvc.perform(request)
+                .andExpect(status().isOk())
+                .andExpect(content().string(equalTo("success")));
+
+        // get 提交获取一个user
+        request = get("/users/123");
+        mvc.perform(request).andExpect(content().string(equalTo("{\"id\":123,\"name\":\"初学者\",\"age\":25}")));
 
     }
 }
