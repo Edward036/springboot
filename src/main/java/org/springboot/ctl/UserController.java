@@ -33,7 +33,7 @@ public class UserController {
         return users.get(id);
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.POST)
+    @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     public String updateUser(@ModelAttribute User user, @PathVariable Long id) {
         User u = users.get(id);
         u.setAge(user.getAge());

@@ -1,5 +1,10 @@
-# springboot
+## 本例子为一个RESTFUL规范的springboot代码。
+---
 
-## 推荐博客
+## RESTful
 
-http://tengj.top/categories/Spring-Boot%E5%B9%B2%E8%B4%A7%E7%B3%BB%E5%88%97/
+> URL定位资源，用HTTP动词（GET,POST,DELETE,DETC）描述操作。
+
++ 看Url就知道要什么
++ 看http method就知道干什么
++ 看http status  code就知道结果如何
