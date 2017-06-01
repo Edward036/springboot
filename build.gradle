@@ -13,10 +13,12 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'idea'
+apply plugin: 'war'
 apply plugin: 'org.springframework.boot'
 
-jar {
-    baseName = 'gs-serving-web-content'
+
+war {
+    baseName = 'boot'
     version =  '0.1.0'
 }
 
