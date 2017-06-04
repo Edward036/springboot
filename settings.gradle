@@ -1,2 +1,5 @@
 rootProject.name = 'springboot'
+include 'springboot-mybatis'
+include 'springboot-core'
+include 'springboot-web'
 
