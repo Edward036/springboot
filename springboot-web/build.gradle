@@ -25,6 +25,7 @@ ext {
 
 dependencies {
     compile project(':springboot-core')
+    compile project(':springboot-mybatis')
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     compile("org.springframework.boot:spring-boot-devtools")
     compile("org.springframework.boot:spring-boot-starter")

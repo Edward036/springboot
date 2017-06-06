@@ -22,7 +22,6 @@ public class helloController {
 
     @RequestMapping("/test")
     public String test(ModelMap map){
-        System.out.println(12314);
         // 加入一个属性，用来在模板中读取
         map.addAttribute("host", "http://127.0.0.1:8080");
         // return模板文件的名称，对应src/main/resources/templates/test.html
