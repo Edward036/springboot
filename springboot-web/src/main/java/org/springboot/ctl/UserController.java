@@ -21,7 +21,7 @@ public class UserController {
     @RequestMapping(value = "/user")
     @ResponseBody
     public String user(){
-        org.springboot.modal.User user = userMapper.findByUserName("Tom");
+        org.springboot.modal.User user = userMapper.findByUserName("Jack");
         return user.getName()+"-----"+user.getId();
     }
 

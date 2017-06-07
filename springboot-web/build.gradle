@@ -11,8 +11,13 @@ buildscript {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.2.RELEASE")
     }
 }
-
 apply plugin: 'org.springframework.boot'
+
+jar {
+    baseName = 'qinxin'
+    version =  '1.0.0'
+}
+
 
 repositories {
     mavenLocal()
@@ -25,6 +30,7 @@ ext {
 
 dependencies {
     compile project(':springboot-core')
+    compile project(':springboot-modal')
     compile project(':springboot-mybatis')
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     compile("org.springframework.boot:spring-boot-devtools")
