@@ -12,6 +12,7 @@ repositories {
 }
 
 dependencies {
+    compile project (':springboot-core')
     compile project (':springboot-modal')
     compile ('mysql:mysql-connector-java')
     compile("org.springframework.boot:spring-boot-starter-jdbc")
