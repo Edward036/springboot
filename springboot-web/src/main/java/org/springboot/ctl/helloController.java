@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestParam;
  * 2017-04-18
  */
 @Controller
-
 public class helloController {
 
     @RequestMapping("/index")

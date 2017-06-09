@@ -1,5 +1,7 @@
 package org.springboot.modal;
 
+import javax.management.MXBean;
+
 /**
  * @author meisen
  * 2017-06-05

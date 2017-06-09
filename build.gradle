@@ -18,6 +18,10 @@ mainClassName='org.springboot.Application'
 allprojects {
     apply plugin: 'idea'
     apply plugin: 'org.springframework.boot'
+
+    dependencies {
+        testCompile("org.springframework.boot:spring-boot-starter-test")
+    }
 }
 
 subprojects {
