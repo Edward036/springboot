@@ -2,10 +2,29 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8" />
-    <title>主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>沁星主页</title>
+    <link type="text/css" href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link type="text/css" href="../static/css/header.css" rel="stylesheet" />
+    <link type="text/css" href="../static/css/main.css" rel="stylesheet" />
 </head>
-<body>
-<p th:text="'Hello, ' + ${name} + '!'" />
-
+<body lang="cn">
+    <div class="container">
+        <div class="row">
+            <header>
+                <div class="col-xs-4 logo">
+                    <img src="../static/images/logo.png" alt="logo" style="width: 270px; height: 60px;" />
+                </div>
+                <div class="col-xs-8 text-center">
+                    <ul class="nav navbar-nav">
+                        <li class="active">首页</li>
+                        <li>产品中心</li>
+                        <li>关于我们</li>
+                        <li>联系我们</li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+    </div>
 </body>
 </html>
