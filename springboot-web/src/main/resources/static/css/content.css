@@ -1,7 +1,8 @@
-.banner{
-    margin-top: 1%;
+.content{
+    width: 100%;
+    margin: 1% 0 0;
+    background-color: #dcdcdc;
 }
-
 .banner-img {
     width: 100%;
     height: 450px;
@@ -18,11 +19,6 @@
 
 }
 
-.content{
-    width: 100%;
-    margin: 0;
-    background-color: #dcdcdc;
-}
 
 .serial-list {
     display: block;
