@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
  *         17/6/11.
  */
 @Controller
-@RequestMapping("/qinxing")
 public class HomeController {
 
     @RequestMapping("/home")

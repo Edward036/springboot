@@ -17,6 +17,7 @@ apply plugin: 'application'
 mainClassName='org.springboot.Application'
 
 allprojects {
+    apply plugin: 'java'
     apply plugin: 'idea'
     apply plugin: 'org.springframework.boot'
 
@@ -25,6 +26,9 @@ allprojects {
     }
 
     dependencies {
+        compile("org.springframework.boot:spring-boot-starter"){
+            exclude module: 'org.springframework.boot:spring-boot-starter-logging'
+        }
         testCompile("org.springframework.boot:spring-boot-starter-test")
     }
 }
@@ -42,7 +46,6 @@ subprojects {
 
     [compileJava,compileTestJava,javadoc]*.options*.encoding = 'UTF-8'
 }
-
 
 repositories {
     mavenLocal()

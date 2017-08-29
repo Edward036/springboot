@@ -14,7 +14,7 @@ buildscript {
 apply plugin: 'org.springframework.boot'
 
 jar {
-    baseName = 'qinxing'
+    baseName = 'springboot-starter'
     version =  '1.0.0'
 }
 
@@ -36,7 +36,9 @@ dependencies {
     compile("org.springframework.boot:spring-boot-devtools")
     compile("org.springframework.boot:spring-boot-starter")
     compile("org.springframework.boot:spring-boot-starter-test")
-    compile("org.springframework.boot:spring-boot-starter-web")
+    compile ('org.springframework.boot:spring-boot-starter-web'){
+        exclude module: 'org.springframework.boot:spring-boot-starter-logging'
+    }
     compile("org.springframework.boot:spring-boot-devtools")
     runtime('org.springframework.boot:spring-boot-devtools')
     testCompile group: 'junit', name: 'junit', version: '4.12'
