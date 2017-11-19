@@ -1,11 +1,9 @@
-group 'org'
-version '1.0'
-
 apply plugin: 'java'
 
 sourceCompatibility = 1.8
 
 archivesBaseName = 'springboot-modal'
+version = '1.0.0'
 
 repositories {
     mavenCentral()

@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.2.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.8.RELEASE")
     }
 }
 apply plugin: 'org.springframework.boot'
@@ -16,6 +16,8 @@ apply plugin: 'org.springframework.boot'
 jar {
     baseName = 'springboot-starter'
     version =  '1.0.0'
+
+
 }
 
 
@@ -25,7 +27,7 @@ repositories {
 }
 
 ext {
-    springBootVersion = '1.5.2.RELEASE'
+    springBootVersion = '1.5.8.RELEASE'
 }
 
 dependencies {

@@ -8,11 +8,13 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.2.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.8.RELEASE")
     }
 }
 
 apply plugin: 'application'
+apply plugin: 'io.spring.dependency-management'
+
 
 mainClassName='org.springboot.Application'
 
@@ -41,9 +43,11 @@ subprojects {
         mavenCentral()
     }
 
+    // java 版本要求
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
 
+    // java编译的时候缺省状态下会因为中文字符而失败
     [compileJava,compileTestJava,javadoc]*.options*.encoding = 'UTF-8'
 }
 
