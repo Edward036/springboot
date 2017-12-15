@@ -1,4 +1,3 @@
 rootProject.name = 'springboot'
-
 include 'springboot-core', 'springboot-modal', 'springboot-mybatis', 'springboot-web'
 
