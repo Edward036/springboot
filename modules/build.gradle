@@ -1,0 +1,20 @@
+version '1.0.0'
+
+apply plugin: 'java'
+
+jar {
+    baseName = 'modules'
+    version = '0.0.1-SNAPSHOT'
+}
+
+archivesBaseName = 'modules'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
