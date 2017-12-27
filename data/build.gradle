@@ -9,6 +9,7 @@ buildscript {
 }
 
 apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
 
 jar {
     baseName = 'data'
@@ -22,9 +23,11 @@ repositories {
 }
 
 dependencies {
+    compile project(':modules')
     // spring data jpa依赖
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     // mysql 依赖
     compile('mysql:mysql-connector-java:6.0.6')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
